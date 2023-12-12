@@ -8,9 +8,15 @@
     public static class Interceptors
     {
         [InterceptsLocation(
-            "C:\\Projects\\Own\\repos\\SlamCodeBlog\\SlamCodeBlog.InterceptorsAsInvariants\\SlamCodeBlog.InterceptorsAsInvariants\\Program.cs", 
-            3,
+            "C:\\Users\\schlaffeck\\Source\\Repos\\slamcodeblog\\net8-interceptors\\SlamCodeBlog.InterceptorsAsInvariants\\Program.cs",
+            5,
             8)]
-        public static void DoRunIntercepted() => Console.WriteLine("Do run intercepted!");
+        public static void DoRunIntercepted(User user)
+        {
+           if(!user.Authenticated)
+                throw new ArgumentException("User must be authenticated.");
+
+            Console.WriteLine("Do run intercepted!");
+        }
     }
 }

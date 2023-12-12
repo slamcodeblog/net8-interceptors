@@ -1,8 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Runner.DoRun();
+using SlamCodeBlog.InterceptorsAsInvariants.Authorization;
+
+var user = new User(false);
+
+Runner.DoRun(user);
 
 class Runner
 {
-    public static void DoRun() => Console.WriteLine("Hello, World!");
+    [AuthorizedUserInvariant]
+    public static void DoRun(User user) => Console.WriteLine("Hello, World!");
 }
