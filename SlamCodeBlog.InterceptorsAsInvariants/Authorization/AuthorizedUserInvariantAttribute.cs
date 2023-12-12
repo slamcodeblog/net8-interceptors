@@ -1,4 +1,6 @@
-﻿namespace SlamCodeBlog.InterceptorsAsInvariants.Authorization
+﻿using SlamCodeBlog.Invariants;
+
+namespace SlamCodeBlog.InterceptorsAsInvariants.Authorization
 {
     public sealed class AuthorizedUserInvariantAttribute : InvariantAttribute
     {

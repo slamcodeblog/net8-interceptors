@@ -9,7 +9,7 @@
     {
         [InterceptsLocation(
             "C:\\Users\\schlaffeck\\Source\\Repos\\slamcodeblog\\net8-interceptors\\SlamCodeBlog.InterceptorsAsInvariants\\Program.cs",
-            5,
+            7,
             8)]
         public static void DoRunIntercepted(User user)
         {

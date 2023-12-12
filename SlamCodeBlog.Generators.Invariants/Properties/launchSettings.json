@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Invariants Generator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\SlamCodeBlog.InterceptorsAsInvariants\\SlamCodeBlog.InterceptorsAsInvariants.csproj"
+    }
+  }
+}

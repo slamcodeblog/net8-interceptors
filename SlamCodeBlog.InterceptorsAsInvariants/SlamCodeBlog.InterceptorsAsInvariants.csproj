@@ -5,7 +5,13 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
     <InterceptorsPreviewNamespaces>$(InterceptorsPreviewNamespaces);System.Runtime.CompilerServices</InterceptorsPreviewNamespaces>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SlamCodeBlog.Generators.Invariants\SlamCodeBlog.Generators.Invariants.csproj"  OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\SlamCodeBlog.Invariants\SlamCodeBlog.Invariants.csproj" />
+  </ItemGroup>
 
 </Project>
